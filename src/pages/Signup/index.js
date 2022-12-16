@@ -34,41 +34,41 @@ const Signup = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center" >
+    <div className="flex flex-col items-center justify-center">
       <h1 className="mt-20 text-2xl mb-2 font-bold">SISTEMA DE CADASTRO</h1>
       <div className="border-2 rounded-2xl shadow-lg border-black border-solid  mb-36 p-2">
-      <form className="flex flex-col items-center my-3">
+        <form className="flex flex-col items-center my-3">
           <div className="flex flex-col items-start w-fit">
-        <Input
-          type="email"
-          placeholder="Digite seu E-mail"
-          value={email}
-          onChange={(e) => [setEmail(e.target.value), setError("")]}
-        />
-        <Input
-          type="email"
-          placeholder="Confirme seu E-mail"
-          value={emailConf}
-          onChange={(e) => [setEmailConf(e.target.value), setError("")]}
-        />
-        <Input
-          type="password"
-          placeholder="Digite sua Senha"
-          value={senha}
-          onChange={(e) => [setSenha(e.target.value), setError("")]}
-        />
-        <labelerror>{error}</labelerror>
-        <Button Text="Inscrever-se" onClick={handleSignup} />
-        <labelsignin>
-          Já tem uma conta?
-          <strong>
-            <Link to="/">&nbsp;Entre</Link>
-          </strong>
-        </labelsignin>
+            <Input
+              type="email"
+              placeholder="Digite seu E-mail"
+              value={email}
+              onChange={(e) => [setEmail(e.target.value), setError("")]}
+            />
+            <Input
+              type="email"
+              placeholder="Confirme seu E-mail"
+              value={emailConf}
+              onChange={(e) => [setEmailConf(e.target.value), setError("")]}
+            />
+            <Input
+              type="password"
+              placeholder="Digite sua Senha"
+              value={senha}
+              onChange={(e) => [setSenha(e.target.value), setError("")]}
+            />
+            <labelerror>{error}</labelerror>
+            <Button Text="Inscrever-se" onClick={handleSignup} />
+            <labelsignin>
+              Já tem uma conta?
+              <strong>
+                <Link to="/">&nbsp;Entre</Link>
+              </strong>
+            </labelsignin>
+          </div>
+        </form>
       </div>
-      </form>
-      </div>
-    </div >
+    </div>
   );
 };
 
