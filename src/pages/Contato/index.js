@@ -1,10 +1,11 @@
-
+import Header from "../../components/Header"
 
 function Contato() {
     return (
-        <div>
+        <div className="mb-32">
+            <Header></Header>
             <div className=" text-center bg-white">
-                <div><h1 className="text-4xl font-bold inline-block mt-10 border-b-2 border-black">Formas de Contato:</h1></div>
+                <div><h1 className="text-2xl md:text-4xl font-bold inline-block mt-10 border-b-2 border-black">Formas de Contato:</h1></div>
                 <div className="flex justify-center space-x-16 mt-10">
                     <div className="text-center">
                         <h1>Email:</h1>
@@ -21,9 +22,9 @@ function Contato() {
                 </div>
             </div>
             <div className=" text-center bg-white mb-10">
-                <div><h1 className="text-4xl font-bold inline-block mt-10 border-b-2 border-black">Onde nos localizamos?</h1></div>
-                <div className="flex justify-center py-10"><img src="/mapa.png" className="fill-black" alt="logo do header"></img></div>
-               <div><p className="text-xl"> Nós estamos no bairro Itaguaçu na Grande Florianopolis</p></div>
+                <div><h1 className="text-2xl md:text-4xl font-bold inline-block mt-10 border-b-2 border-black">Onde nos localizamos?</h1></div>
+                <div className="flex justify-center py-10 mx-10"><img src="/mapa.png" className="fill-black" alt="logo do header"></img></div>
+               <div><p className="text-sm md:text-xl"> Nós estamos no bairro Itaguaçu na Grande Florianopolis<br/> Estamos prontos para lhe atender presencialmente com muita atenção</p></div>
             </div>
         </div>
     )

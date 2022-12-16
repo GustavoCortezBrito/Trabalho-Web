@@ -5,7 +5,7 @@ const data = {
         {
         nome: 'whey' ,
         img: '/whey.png' ,
-        descricao: 'aumente sua hipertrofia com whey!' ,
+        descricao: 'aumente sua hipertrofia com wheyProtein!' ,
         preco: 'R$ 100,00' ,
         id: 1
     },
